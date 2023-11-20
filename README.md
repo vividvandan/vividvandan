@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #ffffff; /* White background */
+            color: rgb(6, 27, 83); /* Neon Yellow text color */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            padding: 20px;
+            background-color: #ffffff; /* Dark Blue background */
+        }
+
+        .logo-container {
+            text-align: center;
+        }
+
+        .logo-container img {
+            width: 130px;
+            height: 150px; /* Set a fixed height to make it a perfect circle */
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+
+        h1 {
+            font-size: 6em;
+            margin: 0;
+            color:rgb(6, 27, 83); /* Dark Blue color */
+            transition: color 0.5s, font-size 0.5s;
+            text-align: center;
+        }
+
+        header:hover h1 {
+            color:#021f1f; /* Light Blue color on hover */
+            font-size: 10em;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .box {
+            width: 310px;
+            height: 340px;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+        }
+
+        .box h2 {
+            margin-top: 3px;
+        }
+
+        .box:hover img {
+            transform: scale(1.1);
+        }
+
+        .box:hover h2 {
+            color: #ff1414; /* Green color on hover */
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #ffdc00;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.5s;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+        .social-links a:hover {
+            color: #9df5ff; /* Light Blue color on hover */
+        }
+
+        .bottom-section {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #001f3f; /* Dark Blue background */
+            color: #39ff14; /* Green text color */
+            padding: 20px;
+            text-align: center;
+            border-top: 5px solid rgb(6, 27, 83); /* Dark Blue border */
+        }
+
+        @media only screen and (max-width: 600px) {
+    /* Add styles for screens smaller than 600px */
+    .logo-container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .box {
+        width: 100%; /* Make boxes full width on small screens */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+}
+
+    </style>
+    <title>VividVandan - Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="17333.jpg" alt="Your Logo">
+        </div>
+        <h1><span style="color: #021f1f;">V</span>ivid <span style="color: #021f1f;">V</span>andan</h1>
+    </header>
+
+    <main>
+        <a href="about-me.html" class="box about-me">
+            <img src="jm.jpg" alt="About Me Image">
+            <h2></h2>
+        </a>
+
+        <a href="portfolio.html" class="box portfolio">
+            <img src="pp1.jpg" alt="Portfolio Image">
+            <h2></h2>
+        </a>
+
+        <a href="lookbook.html" class="box lookbook">
+            <img src="loo.jpg" alt="Lookbook Image">
+            <h2></h2>
+        </a>
+
+        <a href="contact.html" class="box contact">
+            <img src="con.jpg" alt="Contact Image">
+            <h2></h2>
+        </a>
+    </main>
+
+    <div class="social-links">
+        <a href="https://www.instagram.com/vandanwadhwa7/" target="_blank"><img src="pngtree-three-dimensional-instagram-icon-png-image_9015419.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/vw7" target="_blank"><img src="pngimg.com - linkedIn_PNG39.png" alt="LinkedIn"></a>
+        <a href="https://www.example.com/threads" target="_blank"><img src="threads-by-instagram-logo-20008C5295-seeklogo.com.png" alt="Threads"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="Facebook_Logo_(2019).png" alt="Facebook"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="Logo_of_Twitter.svg.png" alt="Twitter"></a>
+    </div>
+
+    <div class="bottom-section">
+        <a href="mailto:vandanwadhwa07@gmail.com" style="background-color: #ffdc00; padding: 5px 10px; border-radius: 5px; color: #001f3f;">Gmail</a>
+        <p>&copy; 2023 Vivid Vandan. All rights reserved.</p>
+    </div>
+</body>
+</html>
+
